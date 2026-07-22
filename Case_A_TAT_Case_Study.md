@@ -70,16 +70,10 @@ each other. Second, holds are recorded per project — so when a parent and a
 child project are held over the same period, they appear as two separate rows
 on two different projects.
 
-That second fact is the trap, and it only bites once the reporting unit is a
-family. When the deductible holds of a parent and its children are combined,
-their periods can overlap — and naively summing each hold's duration would
-deduct the shared time twice, quietly shrinking net TAT and inflating the hit
-rate. The error would be invisible at the dashboard layer; nothing on screen
-would look wrong. To prevent it, I clamp each deductible hold to the
-measurement window and merge overlapping intervals into disjoint periods
-before measuring the deduction, so the same minute is never subtracted twice.
-The raw per-reason sums are retained as diagnostics, and a raw-minus-merged
-column makes any overlap visible per project.
+Those separate records serve different operational levels and must not be combined simply because the projects belong to the same family. The source logic first identifies the reporting unit, then uses only the holds recorded against that unit’s own project number. For example, if one child is blocked but the other children can continue, the affected child is held individually; if that blockage also delays the final assembled deliverable, the parent is held separately without applying the parent hold to every child. Each reporting unit therefore deducts only the hold time governing its own TAT clock.
+
+Each applicable hold is clamped to that unit’s measurement window before its duration is calculated. Interval merging is retained as a defensive control for historical or unexpected overlap within the same reporting unit, even though the standard ERP process should not allow concurrent holds on one project. Raw per-reason totals remain available as diagnostics, and a raw-minus-merged value exposes any unexpected overlap.
+
 
 ### 4.2 The structural question that changed the denominator
 
@@ -153,8 +147,7 @@ rather than in a note asking people not to make it.
 - Minute precision with integer comparison removes the rounding ambiguity at
   the hit/miss boundary — the judged value and the displayed value cannot
   disagree.
-- Overlapping parent/child holds are merged, so double deduction cannot
-  happen even when a family's holds coincide.
+- Hold deductions are scoped to the reporting unit’s own project records; interval merging remains as a defensive control against unexpected overlap within that unit.
 - Container parent projects stay in the output for traceability but carry
   null TAT values, so no aggregation can sweep them into a rate by accident.
 - Unmapped hold reasons default conservatively (counted in TAT, never
