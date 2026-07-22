@@ -30,9 +30,7 @@ definition and the authoritative dataset it consumes.
    decision log and the sanitized source logic. This is the piece to read
    if you only read one.
 
-3. **Case B — Receiving Activity & Queue** — breadth evidence. Sanitized SQL
-   excerpts and a decision log show the same method applied to a different
-   problem shape (one request that unfolded into four distinct workflows).
+3. **Case B — Receiving Activity & Queue** — provides breadth and engineering evidence. It shows how one apparently simple request was decomposed into four flow-specific queue models, each with its own completion    event, reporting grain, source limitations, and exception treatment. The decision log and SQL excerpts are provided for readers who want to examine the source-design detail without repeating the full narrative format used for Case A.
 
 4. **Supporting artifacts** — the decision logs and the operational-precondition
    discussion within Case A, which show the governance layer: how data quality
