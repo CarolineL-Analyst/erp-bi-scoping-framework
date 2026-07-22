@@ -30,7 +30,13 @@ definition and the authoritative dataset it consumes.
    decision log and the sanitized source logic. This is the piece to read
    if you only read one.
 
-3. **Case B — Receiving Activity & Queue** — provides breadth and engineering evidence. It shows how one apparently simple request was decomposed into four flow-specific queue models, each with its own completion    event, reporting grain, source limitations, and exception treatment. The decision log and SQL excerpts are provided for readers who want to examine the source-design detail without repeating the full narrative format used for Case A.
+3. **Case B — Receiving Activity & Queue** — breadth and engineering
+   evidence. It shows how one apparently simple request was decomposed into
+   four flow-specific queue models, each with its own completion event,
+   reporting grain, source limitations, and exception treatment. The decision
+   log and SQL excerpts are provided for readers who want to examine the
+   source-design detail without repeating the full narrative format used for
+   Case A.
 
 4. **Supporting artifacts** — the decision logs and the operational-precondition
    discussion within Case A, which show the governance layer: how data quality
@@ -43,7 +49,7 @@ definition and the authoritative dataset it consumes.
 Portfolio identifiers are internal to this portfolio and do not correspond to
 any engagement's numbering.
 
-- **Case A** and **Case B** are the two deep-read case studies.
+- **Case A** and **Case B** are the two featured portfolio cases.
 - **PF-01 … PF-15** identify the rows in the scoping framework (a
   representative excerpt of the wider scoping work). Case A is PF-01;
   Case B is PF-05.
