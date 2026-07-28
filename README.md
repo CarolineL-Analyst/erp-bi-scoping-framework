@@ -43,20 +43,20 @@ definition and the authoritative dataset it consumes.
    piece to read if you only read one. Its five artifacts show the definition,
    architecture, implementation, governance, and adoption layers:
 
-  - [Case_A_TAT_Case_Study.md](Case_A_TAT_Case_Study.md) — how the KPI
-  definition was reasoned out, validated, and frozen. Start here.
-- [Case_A_KPI_Data_Foundation.md](Case_A_KPI_Data_Foundation.md) — how the
-  validated reporting-unit logic was extended into an authoritative semantic
-  foundation for several dependent KPIs at different business grains.
-- [Case_A_TAT_SQL_Excerpts.sql](Case_A_TAT_SQL_Excerpts.sql) — how the shared
-  logic was implemented, including structural safeguards and the reusable
-  weekly and part-number foundation fields.
-- [Case_A_Decision_Log.xlsx](Case_A_Decision_Log.xlsx) — the decision and
-  change trail, including post-freeze defects, business rulings, and how each
-  issue was classified.
-- [Case_A_Dashboard_Interpretation_Guide.md](Case_A_Dashboard_Interpretation_Guide.md)
-  — the adoption layer being prepared for operational handoff: what each
-  status means, how users should interpret it, and what action follows.
+     - [Case_A_TAT_Case_Study.md](Case_A_TAT_Case_Study.md) — how the KPI
+     definition was reasoned out, validated, and frozen. Start here.
+   - [Case_A_KPI_Data_Foundation.md](Case_A_KPI_Data_Foundation.md) — how the
+     validated reporting-unit logic was extended into an authoritative semantic
+     foundation for several dependent KPIs at different business grains.
+   - [Case_A_TAT_SQL_Excerpts.sql](Case_A_TAT_SQL_Excerpts.sql) — how the shared
+     logic was implemented, including structural safeguards and the reusable
+     weekly and part-number foundation fields.
+   - [Case_A_Decision_Log.xlsx](Case_A_Decision_Log.xlsx) — the decision and
+     change trail, including post-freeze defects, business rulings, and how each
+     issue was classified.
+   - [Case_A_Dashboard_Interpretation_Guide.md](Case_A_Dashboard_Interpretation_Guide.md)
+     — the adoption layer being prepared for operational handoff: what each
+     status means, how users should interpret it, and what action follows.
 
 3. **Case B — Receiving Activity & Queue** — breadth evidence. Sanitized SQL
    excerpts and a decision log show the same method applied to a different
