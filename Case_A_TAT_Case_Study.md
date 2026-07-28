@@ -315,11 +315,15 @@ plausible-but-unverified result, or make downstream inconsistency easier.
 
 The client confirmed the per-deliverable reporting unit and the single-
 outbound-packing-list rule, so the core KPI definition and source logic are
-frozen. Post-freeze implementation validation is still being completed, and
-the cancelled-project population treatment remains pending client
-confirmation. The same reporting-unit and governance framing applies directly
-to several further KPIs that depend on this master calculation. The framing
-itself — three layers of definition, structural safeguards, and preconditions
-as an explicit responsibility boundary — isn't specific to this KPI or to MRO;
-it is how I take any contested metric from a vague request to something a
+frozen. Post-freeze implementation validation is still being completed.
+
+The internal-project exclusion remains a reversible working-validation
+treatment pending confirmation; the cancelled-project population treatment
+remains an open business ruling for the client.
+
+The same reporting-unit and governance framing applies directly to several
+further KPIs that depend on this master calculation. The framing itself —
+three layers of definition, structural safeguards, and preconditions as an
+explicit responsibility boundary — isn't specific to this KPI or to MRO; it
+is how I take any contested metric from a vague request to something a
 reporting team can build on without re-deriving it.
