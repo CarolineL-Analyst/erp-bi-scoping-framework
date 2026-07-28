@@ -26,12 +26,16 @@ definition and the authoritative dataset it consumes.
    rest of the portfolio applies.
 
 2. **Case A — Contractual Turnaround Time (TAT)** — the flagship, and the
-   piece to read if you only read one. Its four artifacts follow the delivery
-   lifecycle:
+   piece to read if you only read one. Its five artifacts show the definition,
+   architecture, implementation, governance, and adoption layers:
    - `Case_A_TAT_Case_Study.md` — how the definition was reasoned out and
      frozen. Start here.
-   - `Case_A_TAT_SQL_Excerpts.sql` — how it was implemented, including the
-     structural guards.
+   - `Case_A_KPI_Data_Foundation.md` — how the validated reporting-unit logic
+     became a reusable semantic foundation for several dependent KPIs at
+     different business grains.
+   - `Case_A_TAT_SQL_Excerpts.sql` — how the logic was implemented, including
+     structural guards and the reusable weekly and part-number foundation
+     fields.
    - `Case_A_Decision_Log.xlsx` — the decision trail, including the defects
      found after freezing and how each was classified.
    - `Case_A_Dashboard_Interpretation_Guide.md` — the adoption layer being
