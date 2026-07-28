@@ -26,13 +26,14 @@ definition and the authoritative dataset it consumes.
 - Implemented the confirmed rules in T-SQL and used post-freeze reconciliation
   to correct implementation defects without reopening the agreed business
   definition.
+  
 ---
 
 ## What's here, and the order to read it
 
 **Start with the framework, then go deep on one case.**
 
-1. **KPI Scoping Framework** (`KPI_Scope_Matrix.xlsx`) — the method.
+1. **KPI Scoping Framework** ([KPI_Scope_Matrix.xlsx](KPI_Scope_Matrix.xlsx)) — the method.
    One row per requested KPI, carrying each from a synthetic or paraphrased request through
    definition, risk triage, and readiness for estimate. Read the
    *Instructions* sheet first, then skim the matrix. This is the lens the
@@ -42,19 +43,20 @@ definition and the authoritative dataset it consumes.
    piece to read if you only read one. Its five artifacts show the definition,
    architecture, implementation, governance, and adoption layers:
 
-   - `Case_A_TAT_Case_Study.md` — how the KPI definition was reasoned out,
-     validated, and frozen. Start here.
-   - `Case_A_KPI_Data_Foundation.md` — how the validated reporting-unit logic
-     was extended into an authoritative semantic foundation for several
-     dependent KPIs at different business grains.
-   - `Case_A_TAT_SQL_Excerpts.sql` — how the shared logic was implemented,
-     including structural safeguards and the reusable weekly and part-number
-     foundation fields.
-   - `Case_A_Decision_Log.xlsx` — the decision and change trail, including
-     post-freeze defects, business rulings, and how each issue was classified.
-   - `Case_A_Dashboard_Interpretation_Guide.md` — the adoption layer being
-     prepared for operational handoff: what each status means, how users should
-     interpret it, and what action follows.
+  - [Case_A_TAT_Case_Study.md](Case_A_TAT_Case_Study.md) — how the KPI
+  definition was reasoned out, validated, and frozen. Start here.
+- [Case_A_KPI_Data_Foundation.md](Case_A_KPI_Data_Foundation.md) — how the
+  validated reporting-unit logic was extended into an authoritative semantic
+  foundation for several dependent KPIs at different business grains.
+- [Case_A_TAT_SQL_Excerpts.sql](Case_A_TAT_SQL_Excerpts.sql) — how the shared
+  logic was implemented, including structural safeguards and the reusable
+  weekly and part-number foundation fields.
+- [Case_A_Decision_Log.xlsx](Case_A_Decision_Log.xlsx) — the decision and
+  change trail, including post-freeze defects, business rulings, and how each
+  issue was classified.
+- [Case_A_Dashboard_Interpretation_Guide.md](Case_A_Dashboard_Interpretation_Guide.md)
+  — the adoption layer being prepared for operational handoff: what each
+  status means, how users should interpret it, and what action follows.
 
 3. **Case B — Receiving Activity & Queue** — breadth evidence. Sanitized SQL
    excerpts and a decision log show the same method applied to a different
@@ -93,14 +95,21 @@ asset, not an internal company document.
 
 ## The through-line
 
-One principle runs through every piece: **make predictable downstream errors difficult or impossible by construction, rather than relying on documentation alone.** Where a downstream
-mistake could happen, the design closes it off in the data itself — judged
-values and displayed values cannot disagree; container and data-quality rows
-carry null metrics so they cannot be swept into a rate; anything uncertain is
-made visible and held out of the numbers rather than guessed. The same
-discipline extends past the query: each definition states the operational
-preconditions it depends on and a governance loop for changes, so
-data-quality risks are addressed upstream wherever possible, rather than
+One principle runs through every piece: **make predictable downstream errors
+difficult or impossible by construction, rather than relying on documentation
+alone.**
+
+Where a downstream mistake could happen, the design closes it off in the data
+itself. Judged values and displayed values cannot disagree; structurally
+ambiguous and contradictory source-evidence rows carry null metrics, while
+authoritative statuses and inclusion controls keep non-eligible rows out of
+the affected performance measures. Other uncertainty is surfaced and either
+handled under a documented conservative rule or excluded from the affected
+measure rather than guessed.
+
+The same discipline extends past the query: each definition states the
+operational preconditions it depends on and a governance loop for changes, so
+data-quality risks are addressed upstream wherever possible rather than
 discovered only after dashboard delivery.
 
 ---
