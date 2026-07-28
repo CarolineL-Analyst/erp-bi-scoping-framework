@@ -12,6 +12,7 @@ validation inside the ERP, source-logic design in T-SQL, and the definition
 governance that keeps a metric stable once it is agreed. A separate
 visualization team builds the dashboards; my deliverable is the confirmed
 definition and the authoritative dataset it consumes.
+
 ---
 
 ## What this portfolio proves
