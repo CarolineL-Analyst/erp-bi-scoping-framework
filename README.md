@@ -12,7 +12,19 @@ validation inside the ERP, source-logic design in T-SQL, and the definition
 governance that keeps a metric stable once it is agreed. A separate
 visualization team builds the dashboards; my deliverable is the confirmed
 definition and the authoritative dataset it consumes.
+---
 
+## What this portfolio proves
+
+- Defined and validated an authoritative ERP turnaround-time reporting unit
+  across standalone, parent, child, detached, and multi-level rework
+  structures, with container and data-quality cases handled explicitly.
+- Designed a reusable reporting foundation supporting customer, department,
+  weekly, part-number, and 52-week KPIs without duplicating the core
+  turnaround-time logic across separate implementations.
+- Implemented the confirmed rules in T-SQL and used post-freeze reconciliation
+  to correct implementation defects without reopening the agreed business
+  definition.
 ---
 
 ## What's here, and the order to read it
