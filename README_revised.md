@@ -94,13 +94,16 @@ the method that produced it.**
    estimate. Read the *Instructions* sheet first, then skim the matrix. This is
    the lens the rest of the portfolio applies.
 
-3. **Case B — Receiving Activity & Queue** — breadth evidence. Sanitized SQL
-   excerpts and a decision log show the same method applied to a different
-   problem shape (one request that unfolded into four distinct workflows).
+3. **Case B — Receiving Activity & Queue** — breadth evidence. The
+   [sanitized SQL excerpts](Case_B_Receiving_SQL_Excerpts.sql) and
+   [decision log](Case_B_Decision_Log.xlsx) show the same method applied to a
+   different problem shape: one request that unfolded into four distinct
+   workflows.
 
-4. **Supporting governance evidence** — the decision logs and the operational
-   precondition material show how data quality, implementation changes, and
-   definition stability are managed after the core rule is agreed.
+4. **Supporting governance evidence** — across the artifacts above, the
+   decision logs and Case A's operational-precondition material show how data
+   quality, implementation changes, and definition stability are managed after
+   the core rule is agreed.
 
 ---
 
