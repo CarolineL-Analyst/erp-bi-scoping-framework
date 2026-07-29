@@ -1,4 +1,4 @@
-# ERP BI Scoping, KPI Definition & Source Logic
+# ERP KPI Definition, Source Logic & BI Scoping
 
 ```
 Contested ERP metric
