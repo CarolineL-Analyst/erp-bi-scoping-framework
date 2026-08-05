@@ -34,7 +34,8 @@ renamed, generalized, or paraphrased from the source.
 Service levels are shown as A / B. Contractual thresholds are represented
 through a generic TargetMinutes field; no original target values are included.
 No customer data, customer names, or schema-identifying details are included.
-Logic is unchanged.
+The analytical reasoning, validation approach, and control patterns are preserved; 
+product-specific implementation details have been generalized.
 
 --------------------------------------------------------------------------------
 EXCERPT 1 - Receipt anchor: normalizing blank references and excluding
