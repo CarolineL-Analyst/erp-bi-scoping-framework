@@ -36,7 +36,8 @@ different class of analytical decision.
 ANONYMIZATION NOTE
 All table names, column names, and type-code values have been renamed or
 remapped from the source schema. No customer data, customer names, or
-vendor-identifying schema details are included. Logic is unchanged.
+vendor-identifying schema details are included. The analytical reasoning, validation approach, and control 
+patterns are preserved; product-specific implementation details have been generalized.
 
 REPRESENTATIVE SCHEMA (anonymized)
     ReceiptHeader      rh   receipt document header (ReceiptNo, ReceiptDate,
