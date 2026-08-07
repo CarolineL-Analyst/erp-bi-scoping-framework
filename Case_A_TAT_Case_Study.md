@@ -1,6 +1,6 @@
 # Case A — Contractual Turnaround Time (TAT) Against Target
 
-*A KPI definition, source-logic, and visualization-handoff case study.
+*An end-to-end analytical-design case study, from KPI definition and source logic through visualization review.
 Anonymized: identifiers, thresholds, and contract language are synthetic; the
 reasoning and structure are unchanged.*
 
