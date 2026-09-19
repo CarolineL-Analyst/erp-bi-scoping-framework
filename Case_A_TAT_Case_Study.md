@@ -338,9 +338,7 @@ The internal-project exclusion remains a reversible working-validation
 treatment pending confirmation; the cancelled-project population treatment
 remains an open business ruling for the client.
 
-**Solution staging.** Where an immediate reporting need preceded the target-state
-product capability, I separated the short-term delivery path from the long-term
-design. I used an Excel reporting template as the interim solution, built on existing ERP outputs and defined target inputs. The long-term design kept contract-specific target maintenance in the product rather than embedding it in customer-specific SQL.
+**Solution staging.** Where an immediate reporting need preceded the target-state product capability, I separated the short-term delivery path from the long-term design. An Excel reporting template is used as the interim solution, built on existing ERP outputs and defined target values. The long-term design keeps contract-specific target maintenance in the product rather than embedding it in customer-specific SQL.
 
 The same reporting-unit and governance framing applies directly to several
 further KPIs that depend on this master calculation. The framing itself —
