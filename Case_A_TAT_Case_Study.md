@@ -340,11 +340,7 @@ remains an open business ruling for the client.
 
 **Solution staging.** Where an immediate reporting need preceded the target-state
 product capability, I separated the short-term delivery path from the long-term
-design. A controlled interim reporting approach used existing ERP outputs and
-controlled target inputs, while contract-specific target maintenance remained a
-configurable target-state capability rather than being expanded into
-customer-specific SQL logic. This allowed the current business need to be met
-without turning the interim solution into the permanent architecture.
+design. I used an Excel reporting template as the interim solution, built on existing ERP outputs and defined target inputs. The long-term design kept contract-specific target maintenance in the product rather than embedding it in customer-specific SQL.
 
 The same reporting-unit and governance framing applies directly to several
 further KPIs that depend on this master calculation. The framing itself —
